@@ -9,6 +9,7 @@ body {
 a {
     text-decoration: none;        /* this removes the line under the links */
     color: white;
+    padding-left: 18px;
 }
 
 li {
@@ -18,11 +19,19 @@ li {
 .hero-section {
     background: #1F2937;
     color: white;
+    display: flex;
+    flex-direction: column;
+    margin: 0px 100px;
 }
 
-.header-link-text {
-    font-size: 18px;
-    color: ##E5E7EB;
+.hero-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 15px 75px;
+}
+
+.header-logo-text {
 }
 
 .header-logo-text {
@@ -30,39 +39,93 @@ li {
     color: #F9FAF8;
 }
 
-.hero-main-text {
-    font-size: 48px;
-    font-weight: 800;
-    color: #F9FAF8;
-}
-
-.hero-secondary-text {
+.header-links {
     font-size: 18px;
     color: ##E5E7EB;
 }
 
-.image-placeholder {
+.hero-main {
     display: flex;
-    padding: 100px;
+    margin: 30px 75px;
+}
+
+.hero-main-left {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hero-main-text {
+    font-size: 48px;
+    font-weight: 800;
+    color: #F9FAF8;
+    padding-bottom: 12px;
+}
+
+.hero-secondary-text {
+    font-size: 18px;
+    color: #E5E7EB;
+    padding-bottom: 12px;
+}
+
+.hero-button {
+}
+
+.hero-main-right {
+    display: flex;
+    flex: 1;
     background-color: grey;
-    margin: 50px;
     justify-content: center;
+    align-items: center;
+}
+
+.information-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 100px;
 }
 
 .information-header {
     font-size: 36px;
     font-weight: 800;
     color: #1F2937;
+    padding: 30px;
 }
 
+.box-container {
+    display: flex;
+    justify-content: center;
+    gap: 52px;
+    flex-wrap: wrap;
+}
 
+.info-box {
+    max-width: 175px;
+    min-width: 175px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.box {
+    border: 1px solid blue; 
+    padding: 75px;
+    border-radius: 18px;
+    color: white;
+}
+
+.caption {
+    font-size: 14px;
+    font-weight: 300;
+}
 
 .quotation-section {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 75px;
     background: #E5E7EB;
+    padding: 150px;
+    margin: 0px 100px;
 }
 
 .inspiring-quotation {
@@ -76,42 +139,59 @@ li {
     font-size: 18px;
     font-weight: 500;
     color: #1F2937;
-}
-
-.call-to-action {
-    background: #1F2937;
-    color: white;
+    align-self: flex-end;
+    padding-top: 18px;
 }
 
 .call-to-action-section {
+    display: flex;
     background-color: #3882F6;
+    justify-content: space-around;
+    align-items: center;
     color: white;
+    display: flex;
+    margin: 50px 200px;
+    padding: 30px
 }
 
-button {
+.call-big {
+    font-size: 18px;
+    color: #F9FAF8;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.call-little {
+    font-size: 12px;
+    color: #F9FAF8;
+    font-weight: 450;
+}
+
+.button1 {
     background-color: #3882F6;
     color: white;
-    border: 1px solid white;
-    padding: 3px 15px;
+    border: 0px;
+    padding: 5px 15px;
+    border-radius: 7px;
+}
+
+
+.button2 {
+    background-color: #3882F6;
+    color: white;
+    border: 1px solid;
+    padding: 5px 15px;
+    border-radius: 7px;
 }
 
 
 .footer {
+    display: flex;
+    justify-content: center;
     background-color: #1F2937;
     color: white;
+    font-size: 18px;
+    padding: 30px 0px;
+    margin: 0px 100px;
+
 }
-
-/*
-
-.sidebar {
-width: 300px;
-background: royalblue;
-}
-
-.card {
-border: 1px solid #eee;
-box-shadow: 2px 4px 16px rgba(0,0,0,.06);
-border-radius: 4px;
-}
-
-*/
